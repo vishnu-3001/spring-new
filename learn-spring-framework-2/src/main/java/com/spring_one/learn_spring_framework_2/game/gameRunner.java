@@ -2,11 +2,12 @@ package com.spring_one.learn_spring_framework_2.game;
 
 public class gameRunner {
 //	private marioGame game;
-	private superContraGame game;
+//	private superContraGame game;
+	private GamingConsole game;
 //	public gameRunner(marioGame game) {
 //		this.game=game;
 //	}
-	public gameRunner(superContraGame game) {
+	public gameRunner(GamingConsole game) {
 		this.game=game;
 	}
 	public void run() {
