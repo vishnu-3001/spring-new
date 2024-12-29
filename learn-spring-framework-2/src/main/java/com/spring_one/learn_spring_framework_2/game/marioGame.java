@@ -1,6 +1,6 @@
 package com.spring_one.learn_spring_framework_2.game;
 
-public class marioGame {
+public class marioGame implements GamingConsole {
 	public void up() {
 		System.out.println("Jump");
 	}
