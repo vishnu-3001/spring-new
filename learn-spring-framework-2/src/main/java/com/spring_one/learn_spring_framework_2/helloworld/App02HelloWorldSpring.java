@@ -1,4 +1,4 @@
-package com.spring_one.learn_spring_framework_2;
+package com.spring_one.learn_spring_framework_2.helloworld;
 
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
@@ -8,7 +8,7 @@ public class App02HelloWorldSpring {
 		// TODO Auto-generated method stub
 		//Launch a spring context
 		//Configure the things that we want spring to manage
-		var context=new AnnotationConfigApplicationContext(HelloWorldConfiguration.class);
+		try(var context=new AnnotationConfigApplicationContext(HelloWorldConfiguration.class)){
 		System.out.println(context.getBean("name"));
 		System.out.println(context.getBean("age"));
 		System.out.println(context.getBean("person"));
@@ -17,6 +17,7 @@ public class App02HelloWorldSpring {
 		System.out.println(context.getBean("person3Parameters"));
 		Object p=context.getBean("person");
 		System.out.println(p);
+		}
 		
 
 	}
