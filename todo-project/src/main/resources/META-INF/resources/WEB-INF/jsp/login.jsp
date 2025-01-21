@@ -7,10 +7,12 @@
 <title>Login</title>
 </head>
 <body>
-	hello ${name}
-	<label>Username</label>
-	<input type="text">
-	<label>Password</label>
-	<input type="password">
+	<form method="post">
+		<label>Username</label>
+		<input type="text" name="name">
+		<label>Password</label>
+		<input type="password" name="password">
+		<input type="submit">
+	</form>
 </body>
 </html>
